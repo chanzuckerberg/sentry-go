@@ -65,7 +65,7 @@ func NewDsn(rawURL string) (*Dsn, error) {
 	case "https":
 		scheme = schemeHTTPS
 	default:
-		return nil, &DsnParseError{fmt.Sprintf("invalid scheme: %s", parsedURL.Scheme}
+		return nil, &DsnParseError{fmt.Sprintf("invalid scheme: %s", parsedURL.Scheme)}
 	}
 
 	// PublicKey
