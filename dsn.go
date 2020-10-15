@@ -51,6 +51,7 @@ type Dsn struct {
 // NewDsn creates an instance of Dsn by parsing provided url in a string format.
 // If Dsn is not set the client is effectively disabled.
 func NewDsn(rawURL string) (*Dsn, error) {
+	fmt.Printf("rawURL: %s", rawURL)
 	// Parse
 	parsedURL, err := url.Parse(rawURL)
 	if err != nil {
